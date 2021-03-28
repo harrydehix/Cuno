@@ -1,2 +1,2 @@
 # Uno Web
-Uno Web is a small project that allows playing uno with friends on your own webserver.
+Uno Web is a React.JS application that allows you to host UNO on your own web server and play with your friends.
