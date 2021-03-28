@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+html,
+body {
+  background: #34495e !important;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
+  background-color: #34495e !important;
+  border-radius: 2rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  background-color: #2c3e50 !important;
+  border-radius: 2rem !important;
+  padding: 4rem !important;
+  box-sizing: content-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+hr {
+  background-color: white;
+  height: 1.3rem;
+}
+
+#uno-heading {
+  font-family: "Staatliches", cursive;
+  color: #3498db;
+  font-size: 4rem;
+  margin-bottom: 0rem !important;
+}
+
+#uno-subheading {
+  color: #ecf0f1;
+  margin-bottom: 3rem;
+}
+
+#start-screen {
+  height: 30rem;
+  width: 40rem;
+}
+
+.tab-list {
+  border-bottom: 0.25rem solid #4d6b8a;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: #34495e;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 0.125rem;
+}
+
+.tab-list-active {
+  background-color: #4d6b8a;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+label {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background: #3498db;
+  padding: 1rem;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.125rem !important;
 }
