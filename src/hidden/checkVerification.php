@@ -1,6 +1,5 @@
 <?php
 require_once 'utils/UserData.php';
-
 session_start();
 
 

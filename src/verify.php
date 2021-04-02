@@ -1,4 +1,6 @@
 <?php
+require_once 'hidden/utils/UserData.php';
+session_start();
 
 require_once 'hidden/utils/InputValidator.php';
 require_once 'hidden/utils/DBManager.php';
@@ -13,6 +15,7 @@ if (isset($_GET['token']) && isset($_GET['username'])) {
     if (InputValidator::isValidUsername($username)) {
         $dbManager = new DBManager(DB_HOST, DB_USER, DB_PASS, DB_NAME, true);
         $success = $dbManager->verifyUser($username, $token);
+        if ($success) $_SESSION['userdata']->verified = true;
     }
 } ?>
 
